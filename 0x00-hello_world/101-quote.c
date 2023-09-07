@@ -1,7 +1,9 @@
 #include <unistd.h>
-/** main - main function
+#include <stdio.h>
+/** 
+ * main - main function
  *
- * Return: Always 0
+ * Return: Always 1
  */
 int main(void)
 {
