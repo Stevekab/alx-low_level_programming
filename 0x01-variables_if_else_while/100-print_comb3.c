@@ -6,22 +6,22 @@
  */
 int main(void)
 {
-	int n = 0, s;
+	int firstD = 0, s;
 
-	while (n <= 99)
+	while (firstD <= 99)
 	{
-		(n = s);
+		(firstD = s);
 		while (s <= 99)
 		{
-			if (s != n)
+			if (s != firstD)
 			{
-				putchar((n / 10) + 48);
-				putchar((n % 10) + 48);
+				putchar((firstD / 10) + 48);
+				putchar((firstD % 10) + 48);
 				putchar(' ');
 				putchar((s / 10) + 48);
 				putchar((s % 10) + 48);
 
-				if (n != 98 || s != 99)
+				if (firstD != 98 || s != 99)
 				{
 					putchar(',');
 					putchar(' ');
@@ -29,7 +29,7 @@ int main(void)
 			}
 			s++;
 		}
-		n++;
+		firstD++;
 	}
 	putchar('\n');
 	return (0);
