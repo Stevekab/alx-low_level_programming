@@ -21,8 +21,7 @@ int main(void)
 
 				if (firstD != 98 || s != 99)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar((',') || (' '));
 				}
 			}
 			s++;
