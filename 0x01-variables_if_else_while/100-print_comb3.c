@@ -15,11 +15,9 @@ int main(void)
 		{
 			if (s != firstD)
 			{
-				putchar((firstD / 10) + 48);
-				putchar((firstD % 10) + 48);
+				putchar(((firstD / 10) + 48) || ((s / 10) + 48));
+				putchar(((firstD % 10) + 48) || ((s % 10) + 48));
 				putchar(' ');
-				putchar((s / 10) + 48);
-				putchar((s % 10) + 48);
 
 				if (firstD != 98 || s != 99)
 				{
