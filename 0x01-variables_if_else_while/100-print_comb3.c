@@ -6,26 +6,26 @@
  */
 int main(void)
 {
-	int firstD = 0, s;
+	int firstD = 0, secondD;
 
 	while (firstD <= 9)
 	{
-		s = 0;
-		while (s <= 9)
+		secondD = 0;
+		while (secondD <= 9)
 		{
-			if (firstD != s && firstD < s)
+			if (firstD != secondD && firstD < secondD)
 			{
 				putchar(firstD + 48);
-				putchar(s + 48);
+				putchar(secondD + 48);
 				putchar(' ');
 
-				if (firstD + s != 17)
+				if (firstD + secondD != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			s++;
+			secondD++;
 		}
 		firstD++;
 	}
