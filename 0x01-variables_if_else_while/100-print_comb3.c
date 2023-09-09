@@ -17,7 +17,6 @@ int main(void)
 			{
 				putchar(firstD + 48);
 				putchar(secondD + 48);
-				putchar(' ');
 
 				if (firstD + secondD != 17)
 				{
