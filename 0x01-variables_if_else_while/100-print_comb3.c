@@ -8,20 +8,21 @@ int main(void)
 {
 	int firstD = 0, s;
 
-	while (firstD <= 99)
+	while (firstD <= 9)
 	{
-		(firstD = s);
-		while (s <= 99)
+		s = 0;
+		while (s <= 9)
 		{
-			if (s != firstD)
+			if (firstD != s && firstD < s)
 			{
-				putchar(((firstD / 10) + 48) || ((s / 10) + 48));
-				putchar(((firstD % 10) + 48) || ((s % 10) + 48));
+				putchar(firstD + 48);
+				putchar(s + 48);
 				putchar(' ');
 
-				if (firstD != 98 || s != 99)
+				if (firstD + s != 17)
 				{
-					putchar((',') || (' '));
+					putchar(',');
+					putchar(' ');
 				}
 			}
 			s++;
