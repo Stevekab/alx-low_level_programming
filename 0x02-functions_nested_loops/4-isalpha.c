@@ -6,7 +6,7 @@
  */
 int _isalpha(int c)
 {
-	if (isdigit(c) || isupper(c) || islower(c))
+	if (isalpha(c))
 		return (1);
 	else
 		return (0);
