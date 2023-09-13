@@ -18,10 +18,6 @@ void print_to_98(int n)
 			printf(" ");
 		}
 	}
-	else if (n == 98)
-	{
-		printf("%d", n);
-	}
 	else
 	{
 		for (i = n; i > 98 ; i--)
